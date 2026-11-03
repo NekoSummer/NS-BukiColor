@@ -1,0 +1,11 @@
+name: BukiColor
+version: '${project.version}'
+author: NewmoomCat
+main: cn.xinyue_neko.plugins.BukiColor.BukiColor
+api-version: '1.13'
+description: This plugin is a backward-compatible version of "AnvilColors".
+
+permissions:
+  bukicolor.uses:
+    description: 'Allows to use color codes when renaming items in anvils.'
+    default: op

@@ -1,0 +1,8 @@
+# AnvilColors v1.0
+# Created by Primimity
+# Need a custom plugin? Discord me @primimity
+
+enablePermission: false
+
+# True/false function that, when enabled, only allows players with the...
+# ... permission of 'anvilcolors.use' to use color formating on anvils
