@@ -13,16 +13,16 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class BukiColor extends JavaPlugin implements Listener {
 
+    private static final String TITLE = "[BukiColor] ";
+
     @Override
     public void onEnable() {
         saveDefaultConfig();
         getServer().getPluginManager().registerEvents(this, this);
 
-        getServer().getConsoleSender().sendMessage("\n" +
-                getDescription().getName() + " v" + getDescription().getVersion() + "\n"
-                        + "Created by" + ChatColor.AQUA + getDescription().getAuthors() + ChatColor.RESET + "\n"
-                        + ChatColor.AQUA + "This plugin is a backward-compatible version of \"AnvilColors\""
-        );
+        getServer().getConsoleSender().sendMessage(TITLE + "plugin: " + getDescription().getName() + " v" + getDescription().getVersion());
+        getServer().getConsoleSender().sendMessage(TITLE + "Created by" + ChatColor.AQUA + getDescription().getAuthors() + ChatColor.RESET);
+        getServer().getConsoleSender().sendMessage(TITLE + ChatColor.AQUA + "This plugin is a backward-compatible version of \"AnvilColors\"");
     }
 
     @Override
